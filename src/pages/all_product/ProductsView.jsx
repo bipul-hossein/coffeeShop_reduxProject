@@ -7,9 +7,9 @@ const ProductsView = () => {
     console.log(products)
     return (
         <div className='w-11/12 mx-auto'>
-            <h2>List of Products</h2>
+            <h2 className='text-center text-3xl font-bold'>List of Products</h2>
             <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -29,9 +29,9 @@ const ProductsView = () => {
                                         <td>{price}</td>
                                         <td>
                                             <Link to="/edit-book">
-                                                <button>Edit</button>
+                                                <button className='text-green-500'>Edit</button>
                                             </Link>
-                                            <button
+                                            <button className='text-green-500'
                                             >
                                                 Delete
                                             </button>
